@@ -1,9 +1,6 @@
 # remotecommander
 A lightweight server for executing bash commands on a target machine using REST.
 
-###Features
-Results have a time to live: you can change the default one using ```--ttl <minutes>```
-
 ##Quickstart
 Run the REST server on the target pc:
 ```bash
@@ -27,3 +24,6 @@ pi@raspberrypi:~ $ wget -qO- 192.168.1.4:2220/result/latest
 pi@raspberrypi:~ $ wget -qO- 192.168.1.4:2220/result/latest
 {"command":"sleep 10","stdout":"","stderr":"","exitStatus":0}
 ```
+
+###Features
+Results have a time to live: you can change the default (10) one using: ```--ttl <minutes>```
