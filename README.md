@@ -1,6 +1,10 @@
 # remotecommander
+A lightweight server for executing bash commands on a target machine using REST.
 
-###Quickstart
+###Features
+Results have a time to live: you can change the default one using ```--ttl <minutes>```
+
+##Quickstart
 Run the REST server on the target pc:
 ```bash
 java -jar remotecommander.jar
