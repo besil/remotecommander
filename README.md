@@ -2,7 +2,7 @@
 A lightweight server for executing bash commands on a target machine using REST.
 
 ##Quickstart
-Download the latest release: [link text](https://github.com/besil/remotecommander/releases)
+Download the latest release: [releases](https://github.com/besil/remotecommander/releases)
 
 Run the REST server on the target pc:
 ```bash
