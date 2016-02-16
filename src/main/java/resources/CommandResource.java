@@ -25,8 +25,6 @@ public class CommandResource {
 	}
 
 	private void setupEndpoints() {
-		// cmd /C dir C:\Users\UGA04853\Desktop\
-		// cmd /C ping 127.0.0.1 -n 6 > nul
 		Spark.post(API_CONTEXT+"/submit", (req, res) -> {
 			String cmd = req.queryParams(CMD_PARAM);			
 			Ticket ticket = ticketManager.newTicket(cmd);
