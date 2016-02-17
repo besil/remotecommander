@@ -27,5 +27,10 @@ pi@raspberrypi:~ $ wget -qO- 192.168.1.4:2220/result/latest
 {"command":"sleep 10","stdout":"","stderr":"","exitStatus":0}
 ```
 
+On a Windows computer, your command should be like this:
+```
+cmd /C dir
+```
+
 ###Features
 Results have a time to live: you can change the default (10) one using: ```--ttl <minutes>```
